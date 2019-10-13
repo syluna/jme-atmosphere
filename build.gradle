@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+    id 'maven'
+    id 'application'
+}
+
+group 'com.jayfella'
+version '1.0'
+
+sourceCompatibility = 11
+mainClassName = "com.jayfella.jme.atmosphere.Main"
+
+repositories {
+    // mavenCentral()
+    jcenter()
+    mavenLocal()
+}
+
+project.ext {
+    jmeVer = "[3.3,)"
+}
+
+dependencies {
+    implementation "org.jmonkeyengine:jme3-core:$jmeVer"
+    implementation "org.jmonkeyengine:jme3-lwjgl3:$jmeVer"
+    implementation "org.jmonkeyengine:jme3-desktop:$jmeVer"
+    implementation "org.jmonkeyengine:jme3-effects:$jmeVer"
+    
+    implementation "com.jayfella:jme-fastnoise:1.0"
+    
+    implementation "com.jayfella:jme-jfx-11:1.1.3"
+}
+
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    archives sourcesJar, javadocJar
+} 
