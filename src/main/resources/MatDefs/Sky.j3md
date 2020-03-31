@@ -10,7 +10,7 @@ MaterialDef Atmosphere {
         Color       Cloud_Color // the color of the clouds.
         Vector2     Cloud_Speed // the speed of the clouds x,z
         Float       Cloud_MorphDirection
-        Float       Cloud_Octaves
+        Int         Cloud_Octaves
 
         Vector4 Cloud_Settings // vec4( scale, cloudCover, brightness, morphSpeed)
 
