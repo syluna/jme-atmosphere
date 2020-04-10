@@ -12,6 +12,7 @@ import com.jme3.scene.shape.Dome;
 /**
  * Created by James on 13/05/2017.
  */
+@Deprecated
 public class SkyDome {
 
     private Vector3f lightDir;

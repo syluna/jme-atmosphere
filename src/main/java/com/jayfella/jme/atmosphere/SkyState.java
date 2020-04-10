@@ -17,6 +17,7 @@ import com.jme3.scene.control.BillboardControl;
  * A state that handles the atmosphere color, clouds and stars.
  * Includes a directional (sun) and ambient light.
  */
+@Deprecated
 public class SkyState extends BaseAppState {
 
     private final Node node = new Node("Sky");

@@ -13,6 +13,7 @@ import com.jme3.scene.shape.Dome;
 /**
  * Created by James on 12/05/2017.
  */
+@Deprecated
 public class StarsDome {
 
     private final Geometry starsGeometry;

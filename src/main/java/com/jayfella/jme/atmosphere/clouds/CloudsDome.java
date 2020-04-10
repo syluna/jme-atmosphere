@@ -14,6 +14,7 @@ import com.jme3.texture.Texture;
 /**
  * Created by James on 10/05/2017.
  */
+@Deprecated
 public class CloudsDome {
 
     Material material;

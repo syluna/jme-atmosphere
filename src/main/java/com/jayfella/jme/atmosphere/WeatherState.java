@@ -12,6 +12,7 @@ import java.util.Set;
 /**
  * Controls and manipulates the weather of a skystate.
  */
+@Deprecated
 public class WeatherState extends BaseAppState {
 
     private final Set<FloatValueListener> windListeners = new HashSet<>();

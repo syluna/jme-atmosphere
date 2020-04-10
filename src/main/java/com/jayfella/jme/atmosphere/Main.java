@@ -45,9 +45,6 @@ public class Main extends SimpleApplication {
         atmosphereState = new NewAtmosphereState(rootNode);
         stateManager.attach(atmosphereState);
 
-        WeatherState weatherState = new WeatherState(atmosphereState);
-        stateManager.attach(weatherState);
-
         waterFilter = new WaterFilter();
         FilterPostProcessor fpp = new FilterPostProcessor(assetManager);
 

@@ -6,6 +6,7 @@ import com.jme3.math.Vector2f;
 /**
  * Created by James on 20/05/2017.
  */
+@Deprecated
 public class CloudConfig {
 
     private final CloudsDome cloudsDome;

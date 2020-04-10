@@ -8,6 +8,7 @@ import com.jme3.math.Vector3f;
 /**
  * Created by James on 13/05/2017.
  */
+@Deprecated
 public class StarLayer {
 
     private final int layer;
